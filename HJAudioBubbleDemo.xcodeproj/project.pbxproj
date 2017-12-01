@@ -15,6 +15,10 @@
 		D20129101FCFED560097A967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D201290F1FCFED560097A967 /* main.m */; };
 		D201291A1FCFED560097A967 /* HJAudioBubbleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20129191FCFED560097A967 /* HJAudioBubbleDemoTests.m */; };
 		D20129251FCFED560097A967 /* HJAudioBubbleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20129241FCFED560097A967 /* HJAudioBubbleDemoUITests.m */; };
+		D20129371FCFEE4F0097A967 /* HJAudioBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = D20129361FCFEE4F0097A967 /* HJAudioBubble.m */; };
+		D20129391FCFF16A0097A967 /* AudioBubble.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20129381FCFF16A0097A967 /* AudioBubble.xcassets */; };
+		D201293C1FD0097C0097A967 /* HJAudioBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D201293B1FD0097C0097A967 /* HJAudioBubbleCell.m */; };
+		D20129461FD131F00097A967 /* HJAudioBubbleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D20129451FD131F00097A967 /* HJAudioBubbleConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		D20129201FCFED560097A967 /* HJAudioBubbleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJAudioBubbleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20129241FCFED560097A967 /* HJAudioBubbleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAudioBubbleDemoUITests.m; sourceTree = "<group>"; };
 		D20129261FCFED560097A967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20129351FCFEE4F0097A967 /* HJAudioBubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJAudioBubble.h; sourceTree = "<group>"; };
+		D20129361FCFEE4F0097A967 /* HJAudioBubble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAudioBubble.m; sourceTree = "<group>"; };
+		D20129381FCFF16A0097A967 /* AudioBubble.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AudioBubble.xcassets; sourceTree = "<group>"; };
+		D201293A1FD0097C0097A967 /* HJAudioBubbleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJAudioBubbleCell.h; sourceTree = "<group>"; };
+		D201293B1FD0097C0097A967 /* HJAudioBubbleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAudioBubbleCell.m; sourceTree = "<group>"; };
+		D20129441FD131F00097A967 /* HJAudioBubbleConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJAudioBubbleConfig.h; sourceTree = "<group>"; };
+		D20129451FD131F00097A967 /* HJAudioBubbleConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAudioBubbleConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		D20128FF1FCFED560097A967 /* HJAudioBubbleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D20129341FCFEE3E0097A967 /* HJAudioBubble */,
 				D20129001FCFED560097A967 /* AppDelegate.h */,
 				D20129011FCFED560097A967 /* AppDelegate.m */,
 				D20129031FCFED560097A967 /* ViewController.h */,
@@ -130,6 +142,20 @@
 				D20129261FCFED560097A967 /* Info.plist */,
 			);
 			path = HJAudioBubbleDemoUITests;
+			sourceTree = "<group>";
+		};
+		D20129341FCFEE3E0097A967 /* HJAudioBubble */ = {
+			isa = PBXGroup;
+			children = (
+				D20129351FCFEE4F0097A967 /* HJAudioBubble.h */,
+				D20129361FCFEE4F0097A967 /* HJAudioBubble.m */,
+				D20129441FD131F00097A967 /* HJAudioBubbleConfig.h */,
+				D20129451FD131F00097A967 /* HJAudioBubbleConfig.m */,
+				D201293A1FD0097C0097A967 /* HJAudioBubbleCell.h */,
+				D201293B1FD0097C0097A967 /* HJAudioBubbleCell.m */,
+				D20129381FCFF16A0097A967 /* AudioBubble.xcassets */,
+			);
+			path = HJAudioBubble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +266,7 @@
 			files = (
 				D201290D1FCFED560097A967 /* LaunchScreen.storyboard in Resources */,
 				D201290A1FCFED560097A967 /* Assets.xcassets in Resources */,
+				D20129391FCFF16A0097A967 /* AudioBubble.xcassets in Resources */,
 				D20129081FCFED560097A967 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D201293C1FD0097C0097A967 /* HJAudioBubbleCell.m in Sources */,
 				D20129051FCFED560097A967 /* ViewController.m in Sources */,
 				D20129101FCFED560097A967 /* main.m in Sources */,
+				D20129461FD131F00097A967 /* HJAudioBubbleConfig.m in Sources */,
+				D20129371FCFEE4F0097A967 /* HJAudioBubble.m in Sources */,
 				D20129021FCFED560097A967 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +461,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PZMTS6D3B;
+				DEVELOPMENT_TEAM = 7BY6XUZ4WR;
 				INFOPLIST_FILE = HJAudioBubbleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.psl.whj.HJAudioBubbleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,8 +476,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PZMTS6D3B;
+				DEVELOPMENT_TEAM = 7BY6XUZ4WR;
 				INFOPLIST_FILE = HJAudioBubbleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.psl.whj.HJAudioBubbleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
