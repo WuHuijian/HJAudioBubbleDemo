@@ -156,6 +156,9 @@ static const CGFloat kPlayIconW = 20.f;
     }else{
         [self startAnimating];
     }
+    if (self.bubbleClickBlock) {
+        self.bubbleClickBlock(self.playIconV.isAnimating);
+    }
 }
 
 - (void)audioBubbleLongPress:(UILongPressGestureRecognizer *)longPress{

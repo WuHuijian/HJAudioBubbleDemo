@@ -20,6 +20,8 @@ typedef void(^BubbleLongPressCallBack)();
 @property (nonatomic, assign) BOOL bubbleShowRight;
 /** 长按回调 */
 @property (nonatomic, copy) BubbleLongPressCallBack longPressCallBack;
+/** 点击回调 */
+@property (nonatomic, copy) void(^bubbleClickBlock)(BOOL isAnimating);
 
 //开始动画
 - (void)startAnimating;
